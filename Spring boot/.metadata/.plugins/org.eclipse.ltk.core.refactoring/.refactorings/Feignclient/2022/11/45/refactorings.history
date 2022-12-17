@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.example.entity&apos; to &apos;Feignclient-1/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Feignclient&apos;&#x0D;&#x0A;- Destination element: &apos;Feignclient-1/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Feignclient/src/main/java/com.example.entity&apos;" description="Copy package" destination="=Feignclient-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.entity" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1667299706125" version="1.0"/>
+</session>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/dummy.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="Home" extends="base.definition">
+		<put-attribute name="title" value="HomePage" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Home.jsp" />
+	</definition>
+	<!-- login page layout -->
+	
+	<definition name="base1.definition" template="/WEB-INF/jsp/layout1.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header1.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	
+	<definition name="base2.definition" template="/WEB-INF/jsp/layout1.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/PdpHeader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="Login" extends="base1.definition">
+		<put-attribute name="title" value="login Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Login.jsp" />
+	</definition>
+<!-- 	
+	<definition name="Register" extends="base1.definition">
+	 <put-attribute name="browserTitle" value="Registration page" />
+    <put-attribute name="body" value="/WEB-INF/jsp/Register.jsp" />
+   
+    </definition> -->
+    
+    
+    <definition name="Mobile" extends="base.definition">
+		<put-attribute name="title" value="MobileProducts" />
+		<put-attribute name="body" value="/WEB-INF/jsp/Mobile.jsp" />
+	</definition>
+    
+    <definition name="MobilePdp" extends="base2.definition">
+		<put-attribute name="title" value="MobileProducts" />
+		<put-attribute name="body" value="/WEB-INF/jsp/MobilePdp.jsp" />
+	</definition>
+	<definition name="showCart" extends="base2.definition">
+		<put-attribute name="title" value="MobileProducts" />
+		<put-attribute name="body" value="/WEB-INF/jsp/showCart.jsp" />
+	</definition>
+	<definition name="orderedList" extends="base2.definition">
+		<put-attribute name="title" value="MobileProducts" />
+		<put-attribute name="body" value="/WEB-INF/jsp/orderedList.jsp" />
+	</definition>
+	
+	<definition name="AddressForm" extends="base1.definition">
+		<put-attribute name="title" value="MobileProducts" />
+		<put-attribute name="body" value="/WEB-INF/jsp/AddressForm.jsp" />
+	</definition>
+    
+</tiles-definitions>  

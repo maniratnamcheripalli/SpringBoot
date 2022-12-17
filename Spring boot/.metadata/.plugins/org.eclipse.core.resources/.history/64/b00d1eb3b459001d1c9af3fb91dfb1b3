@@ -1,0 +1,16 @@
+server:
+  port: 8083
+  
+spring:
+  application:
+    name: API-GATEWAY
+    
+  cloud:
+    gateway:
+      routes:
+      - id: VACCINATION-CENTER
+        uri:
+         lb: //VACCINATION-CENTER
+      
+      
+      

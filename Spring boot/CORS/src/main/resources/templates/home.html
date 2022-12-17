@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org"><head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script th:src="@{/jquery.min.js}"></script>
+
+</head>
+<body>
+
+<h1>Home Page</h1>
+
+<script>
+	function getData(){
+		console.log(11)
+
+		$.get("http://localhost:8080/access",null,function(r){
+			alert(r)
+		})
+	}
+
+</script>
+<button onclick="getData()">home</button>
+<h1>Home Page1</h1>
+</body>
+</html>
